@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html class="bg-gray-100 dark:bg-gray-900">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -6,20 +7,150 @@
     <title>My Projects</title>
 </head>
 <body>
-    <!-- Navbar -->
-    <div class="mx-auto flex items-center gap-x-4 bg-white p-6 dark:bg-slate-900">
-        <div>
-            <div class="text-3xl font-medium text-black dark:text-white">Portfolio Website</div>
-            <p class="text-xl text-gray-500 dark:text-gray-400">Adam Graham</p>
-        </div>
-        <div class="flex flex-1 columns-5 gap-8 justify-end-safe mr-8">
-            <a class="text-xl font-medium text-black dark:text-white" href="index.html">Home</a>
-            <div class="h-auto min-h-[1em] w-px self-stretch bg-gradient-to-tr from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400"></div>
-            <a class="text-xl font-medium text-black dark:text-white" href="projects.html">Projects</a>
-            <div class="h-auto min-h-[1em] w-px self-stretch bg-gradient-to-tr from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400"></div>
-            <a class="text-xl font-medium text-black dark:text-white" href="about.html">About</a>
-        </div>
+  <!-- Navbar -->
+  <div class="mx-auto flex items-center gap-x-4 p-6 border-b border-gray-400/50 dark:border-white/10 flex-wrap gap-y-2 md:flex-none">
+    <div>
+      <div class="text-3xl font-medium text-black dark:text-white">Portfolio Website</div>
+      <p class="text-xl text-gray-700 dark:text-gray-400">Adam Graham</p>
     </div>
+    <div class="flex flex-1 gap-8 justify-center-safe md:justify-end-safe mr-8">
+      <a class="text-xl font-medium text-black dark:text-white" href="index.html">Home</a>
+      <div class="h-auto min-h-[1em] min-w-[1px] w-px self-stretch bg-gradient-to-tr from-transparent via-neutral-700 to-transparent opacity-25 dark:via-neutral-400"></div>
+      <a class="text-xl font-medium text-black dark:text-white" href="projects.html">Projects</a>
+      <div class="h-auto min-h-[1em] min-w-[1px] w-px self-stretch bg-gradient-to-tr from-transparent via-neutral-700 to-transparent opacity-25 dark:via-neutral-400"></div>
+      <a class="flex-none text-xl font-medium text-black dark:text-white my-auto" href="contact.html">Contact Me</a>
+    </div>
+  </div>
 
-    Here are my projects
+  <div class="mx-auto flex flex-col gap-y-6 justify-center p-6 max-w-md sm:max-w-xl md:max-w-3xl lg:max-w-3xl xl:max-w-4xl">
+    <!-- Projects -->
+    <div class="flex flex-col gap-y-3">
+      <div class="mx-0 flex flex-col gap-y-2 border-4 rounded-lg border-gray-400 dark:border-white/10 border-double bg-gray-950/5 dark:bg-gray-800/50 shadow-md dark:shadow-lg shadow-black/25 dark:shadow-white/5 p-5" id="intergalactic-invasion"> <!-- Project -->
+        <div class="flex gap-x-3 gap-y-2 justify-center flex-wrap md:flex-row"> <!-- Top bar -->
+          <h3 class="text-2xl dark:text-white justify-self-start align-middle my-auto">Intergalactic Invasion</h3>
+          <div class="flex flex-wrap gap-x-1 gap-y-2 grow my-auto justify-center md:justify-start">
+            <div class="border-2 rounded-full border-sky-600 border-solid px-2 bg-sky-500/50 dark:bg-slate-900 text-gray-900 dark:text-white shadow-md shadow-sky-600/30">C#</div>
+            <div class="border-2 rounded-full border-sky-600 border-solid px-2 bg-sky-500/50 dark:bg-slate-900 text-gray-900 dark:text-white shadow-md shadow-sky-600/30">Unity</div>
+            <div class="border-2 rounded-full border-sky-600 border-solid px-2 bg-sky-500/50 dark:bg-slate-900 text-gray-900 dark:text-white shadow-md shadow-sky-600/30">Game</div>
+            <div class="border-2 rounded-full border-sky-600 border-solid px-2 bg-sky-500/50 dark:bg-slate-900 text-gray-900 dark:text-white shadow-md shadow-sky-600/30">College Project</div>
+          </div>
+          <div class="border-2 rounded-full border-green-500 border-solid px-2 bg-green-400/50 dark:bg-green-900 text-gray-900 dark:text-white shadow-md shadow-green-500/30 justify-self-end my-auto">Completed</div>
+        </div> <!-- Top Bar End -->
+        <div class="flex flex-row gap-x-2">
+          <p class="justify-self-start text-md md:text-xl text-black dark:text-white align-middle my-auto">Available at: </p>
+          <div class="flex flex-row gap-x-1 grow my-auto">
+            <a href="https://github.com/AdamG39/Intergalactic-Invasion">
+              <img class="h-8 md:h-12 hidden dark:block" src="images/GitHub_Invertocat_White_Clearspace.svg" alt="GitHub icon">
+              <img class="h-8 md:h-12 block dark:hidden" src="images/GitHub_Invertocat_Black_Clearspace.svg" alt="GitHub icon">
+            </a>
+            <a href="https://theagamer39.itch.io/intergalactic-invasion" class="p-1 flex">
+              <img class="align-middle h-6 md:h-8 my-auto hidden dark:block" src="images/itchio-logo-textless-white.svg" alt="Itch.io icon">
+              <img class="align-middle h-6 md:h-8 my-auto block dark:hidden" src="images/itchio-logo-textless-black.svg" alt="Itch.io icon">
+            </a>
+          </div>
+        </div>
+        <p class="text-gray-700 dark:text-gray-400">
+          A simple space invaders like shoot 'em up game made in Unity using C#.
+          This was created as part of my final college project so it was made in a limited time frame.
+          Source code is available via the GitHub link above. An online and downloadable copy is available to play on Itch.io via the link above.
+        </p>
+        <div class="flex flex-row justify-center"> <!-- Project Media -->
+          <!-- Contains a media carosuel -->
+          <img src="images/projects/intergalactic-invasion/thumbnail.png" class="shadow-md shadow-black/50 max-w-2xs md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl">
+        </div> <!-- Project Media End -->
+      </div> <!-- Project End -->
+
+      <div class="mx-0 flex flex-col gap-y-2 border-4 rounded-lg border-gray-400 dark:border-white/10 border-double bg-gray-950/5 dark:bg-gray-800/50 shadow-md dark:shadow-lg shadow-black/25 dark:shadow-white/5 p-5" id="hornet-level-loading-system"> <!-- Project -->
+        <div class="flex gap-x-3 gap-y-2 justify-center flex-wrap md:flex-row"> <!-- Top bar -->
+          <h3 class="text-2xl dark:text-white justify-self-start align-middle my-auto">Hornet Level Loading System</h3>
+          <div class="flex flex-wrap gap-x-1 gap-y-2 grow my-auto justify-center md:justify-start">
+            <div class="border-2 rounded-full border-sky-600 border-solid px-2 bg-sky-500/50 dark:bg-slate-900 text-gray-900 dark:text-white shadow-md shadow-sky-600/30">C++</div>
+            <div class="border-2 rounded-full border-sky-600 border-solid px-2 bg-sky-500/50 dark:bg-slate-900 text-gray-900 dark:text-white shadow-md shadow-sky-600/30">Game System</div>
+            <div class="border-2 rounded-full border-sky-600 border-solid px-2 bg-sky-500/50 dark:bg-slate-900 text-gray-900 dark:text-white shadow-md shadow-sky-600/30">University Project</div>
+          </div>
+          <div class="border-2 rounded-full border-green-500 border-solid px-2 bg-green-400/50 dark:bg-green-900 text-gray-900 dark:text-white shadow-md shadow-green-500/30 justify-self-end my-auto">Completed</div>
+        </div> <!-- Top Bar End -->
+        <div class="flex flex-row gap-x-2">
+          <p class="justify-self-start text-md md:text-xl text-black dark:text-white align-middle my-auto">Available at: </p>
+          <div class="flex flex-row gap-x-1 grow my-auto">
+            <a href="https://github.com/AdamG39/Hornet-Level-Loading-System">
+              <img class="h-8 md:h-12 hidden dark:block" src="images/GitHub_Invertocat_White_Clearspace.svg" alt="GitHub icon">
+              <img class="h-8 md:h-12 block dark:hidden" src="images/GitHub_Invertocat_Black_Clearspace.svg" alt="GitHub icon">
+            </a>
+          </div>
+        </div>
+        <p class="text-gray-700 dark:text-gray-400">
+          A level loading system build using the in-house Hornet game engine at Northumbria University.
+          This level loading system was built using an existing game within the Hornet engine with a specified level file configuration.
+          This project was as a university assignment which was awarded a mark of 95%.
+        </p>
+        <div class="flex flex-row justify-center"> <!-- Project Media -->
+          <!-- Contains a media carosuel -->
+          <img src="images/projects/hornet-level-loading-system/thumbnail.png" class="shadow-md shadow-black/50 max-w-2xs md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl">
+        </div> <!-- Project Media End -->
+      </div> <!-- Project End -->
+
+      <div class="mx-0 flex flex-col gap-y-2 border-4 rounded-lg border-gray-400 dark:border-white/10 border-double bg-gray-950/5 dark:bg-gray-800/50 shadow-md dark:shadow-lg shadow-black/25 dark:shadow-white/5 p-5"> <!-- Project -->
+        <div class="flex gap-x-3 gap-y-2 justify-center flex-wrap md:flex-row"> <!-- Top bar -->
+          <h3 class="text-2xl dark:text-white justify-self-start align-middle my-auto">WASP Calculator</h3>
+          <div class="flex flex-wrap gap-x-1 gap-y-2 grow my-auto justify-center md:justify-start">
+            <div class="border-2 rounded-full border-sky-600 border-solid px-2 bg-sky-500/50 dark:bg-slate-900 text-gray-900 dark:text-white shadow-md shadow-sky-600/30">Assembly</div>
+            <div class="border-2 rounded-full border-sky-600 border-solid px-2 bg-sky-500/50 dark:bg-slate-900 text-gray-900 dark:text-white shadow-md shadow-sky-600/30">Calculator Program</div>
+            <div class="border-2 rounded-full border-sky-600 border-solid px-2 bg-sky-500/50 dark:bg-slate-900 text-gray-900 dark:text-white shadow-md shadow-sky-600/30">University Project</div>
+          </div>
+          <div class="border-2 rounded-full border-green-500 border-solid px-2 bg-green-400/50 dark:bg-green-900 text-gray-900 dark:text-white shadow-md shadow-green-500/30 justify-self-end my-auto">Completed</div>
+        </div> <!-- Top Bar End -->
+        <div class="flex flex-row gap-x-2">
+          <p class="justify-self-start text-md md:text-xl text-black dark:text-white align-middle my-auto">Available at: </p>
+          <div class="flex flex-row gap-x-1 grow my-auto">
+            <a href="#">
+              <img class="h-8 md:h-12 hidden dark:block" src="images/GitHub_Invertocat_White_Clearspace.svg" alt="GitHub icon">
+              <img class="h-8 md:h-12 block dark:hidden" src="images/GitHub_Invertocat_Black_Clearspace.svg" alt="GitHub icon">
+            </a>
+          </div>
+        </div>
+        <p class="text-gray-700 dark:text-gray-400">
+          A calculator program wrote using the WASP custom syntax assembly language created at Northumbria University.
+          This calculator program is designed to run using a specific CPU emulator capable of running the WASP assembly language.
+          This project was part of a university assignment where it achieved a mark of 50 out of 50.
+        </p>
+        <div class="flex flex-row justify-center"> <!-- Project Media -->
+          <!-- Contains a media carosuel -->
+          <img src="images/projects/wasp-calculator/thumbnail.png" class="shadow-md shadow-black/50 max-w-2xs md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl">
+        </div> <!-- Project Media End -->
+      </div> <!-- Project End -->
+
+      <div class="mx-0 flex flex-col gap-y-2 border-4 rounded-lg border-gray-400 dark:border-white/10 border-double bg-gray-950/5 dark:bg-gray-800/50 shadow-md dark:shadow-lg shadow-black/25 dark:shadow-white/5 p-5" id="custom-ide"> <!-- Project -->
+        <div class="flex gap-x-3 gap-y-2 justify-center flex-wrap md:flex-row"> <!-- Top bar -->
+          <h3 class="text-2xl dark:text-white justify-self-start align-middle my-auto">Custom IDE</h3>
+          <div class="flex flex-wrap gap-x-1 gap-y-2 grow my-auto justify-center md:justify-start">
+            <div class="border-2 rounded-full border-sky-600 border-solid px-2 bg-sky-500/50 dark:bg-slate-900 text-gray-900 dark:text-white shadow-md shadow-sky-600/30">C++</div>
+            <div class="border-2 rounded-full border-sky-600 border-solid px-2 bg-sky-500/50 dark:bg-slate-900 text-gray-900 dark:text-white shadow-md shadow-sky-600/30">Vulkan</div>
+            <div class="border-2 rounded-full border-sky-600 border-solid px-2 bg-sky-500/50 dark:bg-slate-900 text-gray-900 dark:text-white shadow-md shadow-sky-600/30">GLFW</div>
+            <div class="border-2 rounded-full border-sky-600 border-solid px-2 bg-sky-500/50 dark:bg-slate-900 text-gray-900 dark:text-white shadow-md shadow-sky-600/30">Personal Project</div>
+          </div>
+          <div class="border-2 rounded-full border-yellow-500 border-solid px-2 bg-yellow-400/50 dark:bg-yellow-900 text-gray-900 dark:text-white shadow-md shadow-yellow-500/30 justify-self-end my-auto">In Development</div>
+        </div> <!-- Top Bar End -->
+        <div class="flex flex-row gap-x-2">
+          <p class="justify-self-start text-md md:text-xl text-black dark:text-white align-middle my-auto">Available at: </p>
+          <div class="flex flex-row gap-x-1 grow my-auto">
+            <a href="#">
+              <img class="h-8 md:h-12 hidden dark:block" src="images/GitHub_Invertocat_White_Clearspace.svg" alt="GitHub icon">
+              <img class="h-8 md:h-12 block dark:hidden" src="images/GitHub_Invertocat_Black_Clearspace.svg" alt="GitHub icon">
+            </a>
+          </div>
+        </div>
+        <p class="text-gray-700 dark:text-gray-400">
+          A customisable IDE wrote using C++ with Vulkan for rendering and GLFW for window management.
+          This IDE aims to allow for total user customisability by allowing for configuration of keybinds, layout, colour schemes and more allowing the developer to fit their preferences.
+          This is a personal project that is still in early development most aspects of the program are likely to subject to change.
+        </p>
+        <div class="flex flex-row justify-center"> <!-- Project Media -->
+          <!-- Contains a media carosuel -->
+          <img src="images/projects/custom-ide/thumbnail.png" class="shadow-md shadow-black/50 max-w-2xs md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl">
+        </div> <!-- Project Media End -->
+      </div> <!-- Project End -->
+      <div id="other-projects"></div>
+    </div> <!-- Projects End -->
+  </div>
 </body>
